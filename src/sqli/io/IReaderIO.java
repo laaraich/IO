@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.Serializable;
 
 public interface IReaderIO <O extends Serializable>{
-	void open() throws FileNotFoundException;
+	void open() throws IOException;
 
 	void close() throws IOException;
 

@@ -2,7 +2,7 @@ package serialisation;
 
 import java.io.Serializable;
 
-public class Person implements Serializable{
+public class Person implements Serializable {
 	/**
 	 * 
 	 */
@@ -40,7 +40,9 @@ public class Person implements Serializable{
 	public void setBirthDay(String birthDay) {
 		this.birthDay = birthDay;
 	}
-	
-	
 
+	@Override
+	public String toString() {
+		return firstName + ":" + lastName + ":" + birthDay;
+	}
 }
